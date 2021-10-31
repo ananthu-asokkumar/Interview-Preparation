@@ -1,7 +1,7 @@
 
 
 // call() apply() bind()
-
+// reuse method of another object in new object
 function displayName() {
     console.log("ananthu");
 }
