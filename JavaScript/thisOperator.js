@@ -46,4 +46,25 @@ obj3.displayName()
 
 
 let name = 'lara';
-windowdisplayName();
+displayName()
+
+
+const obj = {
+    name: "simran",
+    sayHello: function () {
+        console.log("helo", this);
+        var sayBye =  () =>{
+            console.log("bye",this);
+        }
+        sayBye()
+    }
+}
+obj.sayHello()
+/**
+ * Inside arrow function value of this deends on where that 
+ * arrow function is present or defined .And its defined inside object .So its value will be object
+ * 
+ * 
+ * if say bye is not arrow function it returns window object or global object
+ * 
+ */

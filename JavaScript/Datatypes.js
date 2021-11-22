@@ -14,3 +14,6 @@
  * 4)Maps
  * 
  */
+console.log(NaN === NaN);
+
+console.log(typeof function(){});
