@@ -16,3 +16,28 @@
 
 
 // variables are partially hoisted and functions are copletly hoisted
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+var a = 10;
+var a = 1;
+console.log(a);
+
+var res = 10;
+
+const test = () => {
+    
+    var i = 5;
+    res = i;
+    // console.log(i,"i");
+}
+
+test();
+
+console.log(res,"res");
