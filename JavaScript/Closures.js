@@ -27,3 +27,88 @@ d();
  */
 
 
+/////////////////////////////////////////////////////////////////////////
+
+/**
+ * Now  take a look on some interesting interview questions
+ */
+
+function x() {
+    
+    var i = 1;
+    setTimeout(function () {
+        console.log(i);
+    }, 2000)
+    console.log('rabia');
+}
+
+x();
+
+/**
+ * rabia
+ * 1
+ */
+
+/**
+ * 
+ * we are given a problen sttement to print 1,2,3,4,5
+ * after 1s,2,3,4,5
+ */
+
+function y() {
+    for (var i = 1; i <= 5; i++) {
+        setTimeout(function () {
+            console.log(i);
+        }, i*1000);
+        console.log("rabia");
+    }
+}
+
+y();
+
+/**
+ * when we are using var key word to allows redeclaration so 
+ * inside the setTimeout it reffers to the same refference of i
+ * which stores 6;
+ * So 6 will be printed all the time 
+ * 
+ * 
+ * But if we are declaring let key word instead it doesnot 
+ * allow redeclaration so it points to a different reference 
+ * each time .So due to closures the function inside settimeout 
+ * remembers the value of i for each iteration 
+ */
+
+
+function z() {
+  for (let i = 1; i <= 5; i++) {
+    setTimeout(function () {
+      console.log(i);
+    }, i * 1000);
+    
+  }
+}
+
+z();
+
+/**
+ * Only using var
+ */
+
+
+
+function j() {
+    for (var i = 1; i <= 5; i++) {
+        function kk(x) {
+            setTimeout(function () {
+                console.log(x,"x");
+            },2000);
+         
+            
+        }
+        kk(i);
+
+    }
+  }
+
+j();
