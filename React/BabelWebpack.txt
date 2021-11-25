@@ -1,0 +1,30 @@
+
+
+BABEL
+
+
+Babel is a JavaScript compiler and transpiler
+
+
+Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards
+ compatible version of JavaScript in current and older browsers or environments. 
+ Here are the main things Babel can do for you:
+
+*Transform syntax
+*Polyfill features that are missing in your target environment (through a third-party polyfill such as core-js)
+*Source code transformations (codemods)
+
+
+Babel can convert JSX syntax! Check out our React preset to get started. Use it together with the babel-sublime
+ package to bring syntax highlighting to a whole new level.
+
+You can install this preset with
+
+npm install --save-dev @babel/preset-react
+
+
+//////////////////////////////
+WEBPACK
+
+
+

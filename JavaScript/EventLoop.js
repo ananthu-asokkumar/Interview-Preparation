@@ -67,7 +67,7 @@ function check() {
   console.log("End");
 }
 
-check()
+// check()
 
 /**
  * Event loop acts as a gatekeeper which continuously monitors the callstack, whenever the call stack is empty 
@@ -82,3 +82,10 @@ check()
  * 
  * 
  */
+// var yogesh = 5;
+// var rabia = yogesh
+
+
+// yogesh += 4;
+// // console.log(rabia);
+// console.log(yogesh+rabia);  
