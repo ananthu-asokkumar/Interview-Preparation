@@ -68,3 +68,6 @@ obj.sayHello()
  * if say bye is not arrow function it returns window object or global object
  * 
  */
+
+
+//this ===window=>true
