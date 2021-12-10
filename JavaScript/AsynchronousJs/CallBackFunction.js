@@ -92,9 +92,9 @@ function cSqr(n,cb) {
 
 // console.log(cSqr(2));
 
-cSqr(2, function (res) {
-    console.log(res);
-})
+// cSqr(2, function (res) {
+//     console.log(res);
+// })
 
 //Rather than callback Nowadays there are better ways to handle promises that is Promise & async /await
 
@@ -103,5 +103,42 @@ cSqr(2, function (res) {
 /**
  * Callback Hell or Pyramid of Doom
  * 
+ * That means callback is difficult to deal with when there are nested 
+ * callbacks
+ * 
+ * 
+ * ex: if we want to process the result we received furter 
+ * 
+ * 
+ * suppose if we are using a third party api with returns a token on success 
+ * and we need to make another api call using that token
+ * 
+ * Now there are two levels of callack so that the code will look clumcy and 
+ * it is very difficult to deal error handling and debuging
+ * So it becomes hell to manage callbacks
+ * 
+ * To write callback functions in better way we have promises in Javascript
+ * 
  * 
  */
+
+
+  cSqr(2, function (res) {
+      console.log(res);
+      cSqr(res, function (res) {
+          console.log(res);
+      })
+  })
+
+  /***
+   * What is asynchronous process?
+   * The process which takes some time to execute is called Asynchrou=nous process
+   * ex::api calls,fetch,promises
+   * 
+   * 
+   * What is meaning of callback hell or pyramid of doom?
+   * It is difficult to handle as there are multiple api calls and callback functions .That is what is call back hell or pyramid of doom
+   * 
+   * 
+   * 
+   */
