@@ -26,12 +26,22 @@ let participant1 = {
 
 // if i want to apply this method on another object we uses call method
 // I want to use chargeBattery() fn in participant2
+/**
+ * Call is used to change the reference or context or value of this object.
+ * 
+ */
+function test(a, b) {
+         console.log(this,55555);
+     }
 
 let participant2 = {
     name: "rabia",
     battery:90,
 }
-
+test.call()// this points to global objext
+test.call(participant2,3,4)// now call method changed the context of this operator to object oarticipant2
+//appliy can be also used for this 
+test.apply(participant1,[3,4])
 participant1.chargeBattery.call(participant2,10,20)// applyling chargeBattery fn on participant 2
 // first arg is the new object
 
