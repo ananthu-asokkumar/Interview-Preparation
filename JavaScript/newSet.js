@@ -42,6 +42,7 @@ names.add(2);
 names.add(2);
 
 names.add(3);
+console.log(names.has(3));
 console.log(names);
 names.delete(2)
 console.log(names);
