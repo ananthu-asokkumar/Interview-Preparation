@@ -27,3 +27,23 @@ console.log(data);
 let number = [1, 2, 2, 3, 3, 4, 5, 5]
 let unique = [...new Set(number)];
 console.log(unique);
+
+
+//For removal of values Set has following methods
+
+/**
+ * delete(): which takes vales to be removed
+ * clear(): which completely removes values.
+ */
+
+let names = new Set();
+names.add(1);
+names.add(2);
+names.add(2);
+
+names.add(3);
+console.log(names);
+names.delete(2)
+console.log(names);
+names.clear();
+console.log(names);
