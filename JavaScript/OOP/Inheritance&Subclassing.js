@@ -4,7 +4,7 @@
  * Inheritance or subclassing is a very important concept and often
  * used with object oriented paterns.
  * 
- * With ES5 ther ewere different ways of inheritance, but in ES6 
+ * With ES5 there were different ways of inheritance, but in ES6 
  * "extends" is the key word to inherit a class.
  */
 // this is the practical example of how we extends a built in class 
@@ -21,7 +21,7 @@ console.log(obj.toLowerCase());
 
 obj.noc("New String");
 
-//how do we vreate or extends the class
+//how do we create or extends the class
 
 /**
  *  whatever member we create in the  parent are available / accessible for an object of the "child class"
