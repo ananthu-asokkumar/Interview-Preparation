@@ -15,3 +15,10 @@
  * Static typing
  * A statically-typed language is a language (such as Java, C, or C++) where variable types are known at compile time.
  */
+
+
+/**
+ * Explain Implicit type coercion in javascript
+ * 
+ * https://www.geeksforgeeks.org/what-is-type-coercion-in-javascript/
+ */
