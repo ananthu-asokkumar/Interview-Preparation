@@ -59,7 +59,7 @@ console.log([] === []);
 *console.log(key);
  */
 const key = [1];
-console.log(typeof key);//number
+console.log(typeof key);
 
 
 

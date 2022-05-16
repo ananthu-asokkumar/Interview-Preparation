@@ -3,7 +3,7 @@
 /**
  * Promise.all()
  * 
- * when you have multiple promises as in[ut it should return a single promise 
+ * when you have multiple promises as input it should return a single promise 
  * after all promises are resolved ,then you can use the all()
  * 
  * 
@@ -90,7 +90,7 @@ Promise.all([p1, p2, p3, p4])
   })
   .catch((err) => {
     console.log("Error",err);
-  });;
+  });
 
 
 let res = Promise.race([]);

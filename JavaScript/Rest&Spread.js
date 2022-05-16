@@ -8,7 +8,7 @@ const sum = (...args) => { //we can use rest to take n no of arguments to a fn
 sum(1, 2, 3, 4);
 
 function sum1() {
-    console.log(arguments); // ES5
+    console.log(arguments[0]); // ES5
 }
 
 sum1(1, 2, 3, 4);

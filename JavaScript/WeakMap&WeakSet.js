@@ -115,3 +115,16 @@ weakMap.has(key)
 // arr.push(1);
 // arr = [];
 // console.log(a);
+
+// function names1(b) {
+//     let a=4
+//     return function x(c) {
+//         console.log(b+a+c);
+//     }
+// }
+
+// let res1 = names1(1)
+
+// res1(1);
+
+// res1(2)

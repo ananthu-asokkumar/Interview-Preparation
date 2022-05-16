@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" onsubmit="register(event)">
+    
+        <label for="First Name">First Name</label>
+        <input type="text" placeholder="First  Name" id="inp1">
+        <br/>
+        <label for="Last Name"> Last Name</label>
+        <input type="text" name="" id="inp2" placeholder="Last Name">
+        <br/>
+        <label for="email">Email</label>
+        <input type="text" name="" id="inp3" placeholder="email">
+        <input type="submit" name="" >
+    </form>
+  </body>
+</html>
+<script>
+
+function register(e){
+    e.preventDefault();
+
+    let formData={
+        firstname:document.getElementById("inp1").value,
+        lastname:document.getElementById("inp2").value,
+        email:document.getElementById("inp3").value
+
+    }
+
+    console.log(formData);
+}
+
+</script>

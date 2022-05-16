@@ -88,4 +88,6 @@ function check() {
 
 // yogesh += 4;
 // // console.log(rabia);
-// console.log(yogesh+rabia);  
+// console.log(yogesh+rabia);
+
+

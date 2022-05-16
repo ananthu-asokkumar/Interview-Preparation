@@ -142,3 +142,28 @@ function cSqr(n,cb) {
    * 
    * 
    */
+
+
+
+
+
+
+
+let data;
+
+function getdata() {
+
+    setTimeout(() => {
+        data = { token: 1212323 } 
+        
+    },1000)
+    
+}
+console.log("Stat=rts here");
+
+getdata();
+function displayData() {
+    console.log(data);
+console.log("Ends here ");
+}
+displayData();

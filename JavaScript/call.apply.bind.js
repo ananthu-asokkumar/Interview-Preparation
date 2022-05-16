@@ -2,12 +2,12 @@
 
 // call() apply() bind()
 // reuse method of another object in new object
-function displayName() {
-    console.log("ananthu");
-}
+// function displayName() {
+//     console.log("ananthu");
+// }
 
-displayName();
-displayName.call();
+// displayName();
+// displayName.call();
 //Call()
 // calls a method of an object substituting another object with current object
 //call attaches `this` into function and executes the function immediately:
@@ -31,14 +31,15 @@ let participant1 = {
  * 
  */
 function test(a, b) {
-         console.log(this,55555);
+    console.log(this, 55555);
+    console.log(a,b);
      }
 
 let participant2 = {
     name: "rabia",
     battery:90,
 }
-test.call()// this points to global objext
+// test.call()// this points to global objext
 test.call(participant2,3,4)// now call method changed the context of this operator to object oarticipant2
 //appliy can be also used for this 
 test.apply(participant1,[3,4])
@@ -53,7 +54,7 @@ console.log(participant2);
 // apply is also similar to call() only difference is apply takes an array of arguments
 
 
-participant1.chargeBattery.apply(participant2, [10, 10])
+participant1.chargeBattery.apply(participant2, [10, 20])
 
 
 //now battery of participat 2 will be 140

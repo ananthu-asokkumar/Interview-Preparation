@@ -45,3 +45,14 @@ const obj1 = new sum1(3);
 
 //this inside an arrow fn reffers to global object,because there is class key word to reffer to the class
 //
+
+
+function k() {
+  console.log(this,"this");
+}
+// k()
+const j = () => {
+  console.log(this, "this");
+  
+}
+j()
